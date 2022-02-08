@@ -1,0 +1,134 @@
+.App {
+ margin: 0;
+ padding: 0;
+}
+
+
+.css-r6ceg9 {
+    margin: 0;
+    align-items: flex-start !important;
+    gap:0px;
+    justify-content: space-between;
+    width: 100%;
+}
+.MuiImageListItem-root {
+    width: 100%;
+}
+.MuiImageListItem-root > img {
+    height: 300px !important;
+}
+.css-a8q90b {
+    max-width: 32%;
+}
+.css-isbt42{
+    width: 100%;
+    margin-left: 0;
+}
+.css-1qsxih2{
+padding: 0;
+}
+@media (max-width:992px){
+    .css-a8q90b {
+        max-width: 48%;
+    }
+}
+@media (max-width:767px){
+    .css-a8q90b {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+}
+.css-1pakh3q {
+    text-align: left !important;
+}
+.MuiImageListItem-root {color: #3f3f3f;}
+
+.MuiImageListItem-root p {
+    overflow: hidden;
+}
+div#loader {
+    background: #65656559 !important;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+.MuiImageListItem-root {
+    color: #000000b5;
+    font-weight: 700;
+    text-decoration: none;
+}
+a.MuiButton-root {
+    display: none;
+}
+
+
+.css-r6ceg9 {
+    margin-left: 0 !important;
+    align-items: flex-start !important;
+    gap:0px;
+    justify-content: space-between;
+    width: 100%;
+}
+.MuiImageListItem-root {
+    width: 100%;
+}
+.MuiImageListItem-root > img {
+    height: 300px !important;
+}
+
+.css-1pakh3q {
+    text-align: left !important;
+    margin-top: 10px;
+}
+.MuiImageListItem-root {color: #3f3f3f;}
+
+.MuiImageListItem-root p {
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4 !important;
+}
+div#loader {
+    background: #65656559 !important;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+.MuiImageListItem-root {
+    color: #000000b5;
+    font-weight: 700;
+    text-decoration: none;
+}
+a.MuiButton-root {
+    display: none;
+}
+
+w {}
+
+.css-1orzy9s {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.css-1hut38s .MuiInputBase-input {
+    width: 100%;
+    border: 1px solid beige;
+}
+
+.MuiInputBase-root.MuiInputBase-colorPrimary.css-1hut38s {
+    width: 100%;
+}
+
+.css-191lty2 {
+    padding-left: 0;
+}
