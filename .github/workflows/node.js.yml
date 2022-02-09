@@ -1,22 +1,28 @@
-name: Deploy using AWS SSM Send-Command 
+name: Deploy to server
 
 on:
-push:
-branches: [master]
+  push:
+    branches:
+    - master
 
 jobs:
-start:
-runs-on: ubuntu-latest 
+  deploy:
+    env:
+      CI: false
 
-steps:
-			  - uses: actions/checkout@v2
-        - name: AWS SSM Send Command
-			  uses: peterkimzz/aws-ssm-send-command@1.0.1
-			  with:
-			  aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID  }}
-			  aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
-			  aws-region: ap-south-1
-			  instance-ids: ${{ secrets.INSTANCE_ID  }}
-			  comment: Deploy the master branch
-			  working-directory: /var/www/html/react/
-			  command: /bin/sh ./deploy.sh
+    name: Deploy build files to server
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: AWS SSM Send Command
+      uses: peterkimzz/aws-ssm-send-command@1.0.1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID  }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY  }}
+        aws-region: us-east-1
+        instance-ids: ${{ secrets.INSTANCE_ID  }}
+        comment: Deploy the master branch
+        working-directory: /var/www/html/react/
+        command: /bin/sh ./deploy.sh
